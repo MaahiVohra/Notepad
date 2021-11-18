@@ -1,0 +1,40 @@
+body{
+    background-color: #1e2127;
+    margin: 0;
+}
+
+.wrapper{
+    display: flex;
+    padding: 1rem 1rem;
+    font-size: 1rem;
+    
+}
+
+pre{
+    margin: 0;
+}
+
+#code-display{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-family: 'Source Code Pro', monospace;
+}
+
+.line-numbers{
+    color: rgb(209, 207, 207);
+    padding-right: 1rem;
+    padding-top: 1rem;
+    text-align: end;
+    font-family: 'Source Code Pro', monospace;
+}
+
+textarea{
+    background-color: #282c34;
+    font-family: 'Source Code Pro', monospace;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-size: 1rem;
+    color: rgb(221, 221, 221);
+    border: none;
+    outline: none;
+}
