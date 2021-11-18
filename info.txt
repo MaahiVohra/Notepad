@@ -1,0 +1,9 @@
+install node, express, mongoose, ejs, nodemon(use --save-dev)
+
+change in scripts tag in package.json :
+    "test": "echo \"Error: no test specified\" && exit 1"  ->    "start": "nodemon server.js"
+
+nodemon reloads our js file on every save without needing to manually use node 
+ejs is used to process all our views(pages)
+ejs can send info from the server to the client
+static files - files that clients download from the server eg- images, css
