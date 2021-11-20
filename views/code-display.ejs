@@ -17,16 +17,15 @@
 </head>
 <body>
     <form action="/save" method="post">
-    <div class="wrapper">
-        <div class="line-numbers">
-            <% for(let i=1; i<=lineNumbers;i++) { %>
-            <div><%= i %></div>
-            <% } %>
+        <%- include("_buttons.ejs")%>
+        <div class="wrapper">
+            <div class="line-numbers">
+                <% for(let i=1; i<=code.split('\n').length;i++) { %>
+                <div><%= i %></div>
+                <% } %>
+            </div>
+            <textarea autofocus name="value" cols="150" rows="10"><%= locals.code %></textarea>
         </div>
-        <textarea autofocus name="value" cols="150" rows="10"><%= code %></textarea>
-        <!--<pre><code id="code-display" class="language-plaintext"><%= code %></code></pre> pre tag allows us to keep all the whitespace, code tag gives us monospacing in the text, code stores the data given to it by the server, %= pushes it to the client -->
-
-    </div>
     </form>
     <script>autosize(document.querySelector('textarea'));</script>
 </body>
